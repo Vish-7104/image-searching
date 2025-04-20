@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style1.css"/>
+</head> 
+<body>
+      
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 900 600"  version="1.1"><rect x="0" y="0" width="500%" height="500%" fill="#001220"/><path d="M0 398L21.5 405.8C43 413.7 86 429.3 128.8 426.8C171.7 424.3 214.3 403.7 257.2 400.3C300 397 343 411 385.8 411.8C428.7 412.7 471.3 400.3 514.2 388.5C557 376.7 600 365.3 642.8 365.5C685.7 365.7 728.3 377.3 771.2 381.8C814 386.3 857 383.7 878.5 382.3L900 381L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#fa7268"/><path d="M0 456L21.5 448.2C43 440.3 86 424.7 128.8 414.2C171.7 403.7 214.3 398.3 257.2 407.3C300 416.3 343 439.7 385.8 448.2C428.7 456.7 471.3 450.3 514.2 449.8C557 449.3 600 454.7 642.8 458.8C685.7 463 728.3 466 771.2 458.8C814 451.7 857 434.3 878.5 425.7L900 417L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#ef5f67"/><path d="M0 465L21.5 467.2C43 469.3 86 473.7 128.8 478.5C171.7 483.3 214.3 488.7 257.2 483.2C300 477.7 343 461.3 385.8 457.2C428.7 453 471.3 461 514.2 471.5C557 482 600 495 642.8 495.7C685.7 496.3 728.3 484.7 771.2 474C814 463.3 857 453.7 878.5 448.8L900 444L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#e34c67"/><path d="M0 536L21.5 534.3C43 532.7 86 529.3 128.8 525.8C171.7 522.3 214.3 518.7 257.2 516.5C300 514.3 343 513.7 385.8 508C428.7 502.3 471.3 491.7 514.2 493.5C557 495.3 600 509.7 642.8 516.2C685.7 522.7 728.3 521.3 771.2 516.2C814 511 857 502 878.5 497.5L900 493L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#d53867"/><path d="M0 570L21.5 567.7C43 565.3 86 560.7 128.8 560.7C171.7 560.7 214.3 565.3 257.2 562.7C300 560 343 550 385.8 547.5C428.7 545 471.3 550 514.2 555C557 560 600 565 642.8 561.7C685.7 558.3 728.3 546.7 771.2 540C814 533.3 857 531.7 878.5 530.8L900 530L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#c62368"/></svg>
+    <header>
+       <h1>AI IMAGE GENERATOR</h1>
+       <div class="auth-icon" id="authIcon" title="Login / Signup">👤</div>
+
+
+<div class="auth-modal" id="authModal">
+  <div class="auth-content">
+    <span class="close-auth" id="closeAuth">&times;</span>
+    <h2>Login / Signup</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="authSubmit">Submit</button>
+  </div>
+</div>
+
+  </header>
+  <section class="image-section"></section>
+  <section class="bottom section">
+      <div class="input-container">
+        <input
+        id="prompt"
+        name="prompt"
+        autocomplete="off"
+        placeholder="Enter your image prompt"/> 
+        <div id="submit-icon">➢</div>
+     </div>
+</section>
+
+  <div class="toggle-container">
+    <label for="toggle360">
+      <input type="checkbox" id="toggle360" />
+      Enable 360° Effect
+    </label>
+  </div>  
+  
+  <div id="imageViewerModal" class="viewer-modal">
+    <span class="close-viewer" id="closeViewer">&times;</span>
+    <div class="viewer-container" id="viewerContainer">
+      <img id="viewerImage" class="viewer-img" draggable="false" />
+      
+      <div id="image-edit-controls">
+        <button id="rotate-left">Rotate Left</button>
+        <button id="rotate-right">Rotate Right</button>
+        
+        <label for="resolution-slider">Resolution</label>
+        <input type="range" id="resolution-slider" min="0.5" max="3" step="0.1" value="1" />
+
+        <label for="brightness-slider">Brightness</label>
+        <input type="range" id="brightness-slider" min="0" max="2" step="0.1" value="1" />
+          
+        
+        <label for="filter-select">Filter</label>
+        <select id="filter-select">
+          <option value="none">None</option>
+          <option value="grayscale(100%)">Grayscale</option>
+          <option value="sepia(100%)">Sepia</option>
+          <option value="blur(5px)">Blur</option>
+          <option value="contrast(150%)">High Contrast</option>
+        </select>
+
+        <button id="save-changes">Save Changes</button>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+
+  
+<script src="app.js"></script>
+
+
+</body>
+</html>
